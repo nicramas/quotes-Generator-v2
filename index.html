@@ -5,14 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>quotes - generate the best quotes</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <h1>Kocham Cię Marinko</h1>
+    <main class="container" id="container">
+        <!-- Quote Container-->
+        <div class="quote" id="quote-container">
+            <!--Quote-->
+            <div class="quote_text">
+            <i class="fas fa-quote-left"></i>
+            <span class="quote_text_content" id="quote_text_content">tu będzie cytat</span>
+            </div>
+            <!--Author-->
+            <div class="quote_author">
+                <span class="quote_author_name" id="quote_author_name"></span>
+            </div>
+            <!--Buttons-->
+            <div class="quote_btn" id="quote_btn">
+                <button class="quote_btn_copy" id="copy-quote" tittle="Copy This!">
+                    <i class="fa-regular fa-copy"></i>
+                </button>
+                <button class="quote_btn_new" id="new-quote">New Quote</button>
+            </div>
+        </div>
+    </main>
+    <div class="loader" id="loader"></div>
     <!-- Script -->
     <script src="script.js"></script>
 </body>
