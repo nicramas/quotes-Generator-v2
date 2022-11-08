@@ -1,8 +1,23 @@
-@media screen and (max-width: 960px) {
+@media (max-width: 960px) {
     .quote {
         margin: auto 10px;
         &_text {
             font-size: 2.6rem;
         }
+    }
+}
+@media (max-width: 399px) {
+    .quote_btn {
+        flex-direction: column;
+        align-items: center;       
+            &_new, &_copy {
+            width: 50vw;
+            }
+    }
+    .tooltip .tooltiptext {
+        left: 0;
+        bottom: 2.7rem;
+        padding: 0.2rem 0;
+
     }
 }

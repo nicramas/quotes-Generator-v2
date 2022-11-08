@@ -1,0 +1,13 @@
+@mixin btnStyle() {
+    font-family: $webFont;
+    font-weight: 400;
+    font-size: 1.2rem;
+
+    
+}
+
+@mixin boxStyle() {
+    background-color: $boxBackground;
+    border-radius: 0.7rem;
+    border: solid 1px $borderColor;
+}

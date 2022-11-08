@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>quotes - generate the best quotes</title>
+    <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
     <link rel="manifest" href="./favicon/site.webmanifest">
-    <link rel="stylesheet" href="./css/main.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
     <main class="container" id="container">
@@ -18,19 +22,22 @@
         <div class="quote" id="quote-container">
             <!--Quote-->
             <div class="quote_text">
-            <i class="fas fa-quote-left"></i>
-            <span class="quote_text_content" id="quote_text_content">tu będzie cytat</span>
+                <i class="fas fa-quote-left"></i>
+                <span class="quote_text_content" id="quote_text_content"></span>
             </div>
             <!--Author-->
             <div class="quote_author">
-                <span class="quote_author_name" id="quote_author_name"></span>
+                <span class="quote_author_name" id="quote_author_name">autor</span>
             </div>
             <!--Buttons-->
-            <div class="quote_btn" id="quote_btn">
-                <button class="quote_btn_copy" id="copy-quote" tittle="Copy This!">
-                    <i class="fa-regular fa-copy"></i>
-                </button>
-                <button class="quote_btn_new" id="new-quote">New Quote</button>
+            <div class="quote_btn" id="quote_btn">  
+                <div class="tooltip">
+                    <button class="quote_btn_copy btn" id="copy-quote" tittle="Copy This!">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                    <span class="tooltiptext">Copy Quote</span>
+                </div>
+                <button class="quote_btn_new btn" id="new-quote">New Quote</button>
             </div>
         </div>
     </main>

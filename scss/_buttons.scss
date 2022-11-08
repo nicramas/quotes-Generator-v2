@@ -1,0 +1,14 @@
+.quote_btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    @include btnStyle();
+    @include boxStyle();
+    padding: 0.5rem 1rem;
+}
+.btn:hover {
+    box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);    
+}
