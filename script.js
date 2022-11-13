@@ -3,6 +3,8 @@ const quoteText = document.getElementById('quote_text_content');
 const quoteAuthor = document.getElementById('quote_author_name');
 const copyQuoteBtn = document.getElementById('copy-quote');
 const newQuoteBtn = document.getElementById('new-quote');
+const infoWindow = document.getElementById('info');
+const infoBtn = document.getElementById('info_box_btn')
 
 let apiQuotes = [];
 
@@ -51,10 +53,20 @@ async function getQuotes() {
     }
 }
 
+function copyQuote() {
+    navigator.clipboard.writeText(quoteText.textContent);
+    infoWindow.style.display = 'flex';
+}
+
+function closeInfo() {
+    infoWindow.style.display = 'none';
+}
 
 //Event listeners
 newQuoteBtn.addEventListener('click', newQuote);
+copyQuoteBtn.addEventListener('click', copyQuote);
+infoBtn.addEventListener('click', closeInfo);
+
 
 
 getQuotes();
-

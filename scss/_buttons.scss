@@ -8,7 +8,28 @@
     @include btnStyle();
     @include boxStyle();
     padding: 0.5rem 1rem;
+
 }
 .btn:hover {
+    color: $fontColorBoxH1;
     box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);    
 }
+
+.info {
+    &_box {
+        width: 93%;
+        padding: 0.5rem;
+
+        display: flex;
+        justify-content: flex-end;
+
+        &_btn {
+            padding: 0.2rem;
+            font-size: 0.7rem;
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+
