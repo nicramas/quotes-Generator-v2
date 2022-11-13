@@ -3,8 +3,8 @@ const quoteText = document.getElementById('quote_text_content');
 const quoteAuthor = document.getElementById('quote_author_name');
 const copyQuoteBtn = document.getElementById('copy-quote');
 const newQuoteBtn = document.getElementById('new-quote');
-const infoWindow = document.getElementById('info');
 const infoBtn = document.getElementById('info_box_btn')
+const infoWindow = document.getElementById('info');
 
 let apiQuotes = [];
 
