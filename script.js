@@ -31,16 +31,6 @@ function newQuote() {
 }
 
 //Get Quotes from API
-// const API = "https://type.fit/api";
-
-// function getQuotes() {
-// fetch(`${API}/quotes`)
-//     .then(response => response.json())
-//     .then(data => {data})
-//     .catch(error => {
-//         console.log(error);
-//     })
-//     newQuote();
 async function getQuotes() {
     const apiUrl = 'https://jacintodesign.github.io/quotes-api/data/quotes.json';
     try {
@@ -52,14 +42,16 @@ async function getQuotes() {
         console.log('error');
     }
 }
-
+//
 function copyQuote() {
     navigator.clipboard.writeText(quoteText.textContent);
     infoWindow.style.display = 'flex';
+    newQuoteBtn.style.display = 'none';
 }
 
 function closeInfo() {
     infoWindow.style.display = 'none';
+    newQuoteBtn.style.display = 'flex';
 }
 
 //Event listeners
